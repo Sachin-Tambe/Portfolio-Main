@@ -11,11 +11,11 @@ const data = {
     "phone": "+91-9076398319",
     "resumeUrl": "/resume.pdf",
     "socials": {
-      "github": "https://github.com/",
-      "linkedin": "https://linkedin.com/in/",
-      "kaggle": "https://kaggle.com/",
-      "twitter": "https://twitter.com/",
-      "medium": "https://medium.com/"
+      "github": "https://github.com/Sachin-Tambe",
+      "linkedin": "https://www.linkedin.com/in/-sachintambe/?originalSubdomain=in",
+      "kaggle": "https://www.kaggle.com/sachintabajitambe",
+      "twitter": "#",
+      "medium": "#"
     }
   },
   "skills": [
