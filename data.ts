@@ -9,7 +9,7 @@ const data = {
     "bio": "I am an Agentic AI Engineer building on a strong foundation in Data Science and Analytics. My journey started with interpreting data to drive business decisions, which naturally evolved into engineering autonomous AI systems that take action on that data. I am actively learning and implementing multi-agent workflows, fine-tuning LLMs, and developing intelligent applications that bridge the gap between traditional data analysis and agentic automation.",
     "email": "tambesachin347@gmail.com",
     "phone": "+91-9076398319",
-    "resumeUrl": "/resume.pdf",
+    "resumeUrl": "resume.pdf",
     "socials": {
       "github": "https://github.com/Sachin-Tambe",
       "linkedin": "https://www.linkedin.com/in/-sachintambe/?originalSubdomain=in",
