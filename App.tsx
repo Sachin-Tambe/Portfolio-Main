@@ -6,7 +6,6 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
-import ChatInterface from './components/ChatInterface';
 
 const App: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const App: React.FC = () => {
         <Experience />
         <Projects />
         <Education />
-        <ChatInterface />
       </main>
       <Contact />
     </div>
