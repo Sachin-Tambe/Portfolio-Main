@@ -1,0 +1,117 @@
+{
+  "personalInfo": {
+    "name": "Sachin Tambe",
+    "title": "Data Analyst & AI Engineer",
+    "tagline": "Transforming raw data into strategic business decisions.",
+    "bio": "I am a Data Analyst and AI Engineer specializing in building end-to-end data pipelines and predictive models. Moving beyond simple analysis, I engineer robust systems that automate reporting and integrate Generative AI to solve complex manufacturing and business problems. My stack includes Python, SQL, Cloud Infrastructure, and modern LLM frameworks.",
+    "email": "tambesachin347@gmail.com",
+    "phone": "+91-9076398319",
+    "resumeUrl": "/resume.pdf",
+    "socials": {
+      "github": "https://github.com/",
+      "linkedin": "https://linkedin.com/in/",
+      "kaggle": "https://kaggle.com/",
+      "twitter": "https://twitter.com/",
+      "medium": "https://medium.com/"
+    }
+  },
+  "skills": [
+    {
+      "category": "Data Engineering & DBs",
+      "items": ["SQL (PostgreSQL, MySQL)", "MongoDB", "AWS (S3, RDS, Glue)", "Apache Airflow", "ETL Pipelines", "Docker"]
+    },
+    {
+      "category": "Data Science & ML",
+      "items": ["Python (Pandas, Scikit-learn)", "XGBoost/LightGBM", "Time Series (ARIMA, Prophet)", "A/B Testing", "Statistical Analysis"]
+    },
+    {
+      "category": "Generative AI",
+      "items": ["RAG Architecture", "LangChain", "LlamaIndex", "Vector Databases (Pinecone)", "Fine-tuning LLMs", "OpenAI API"]
+    },
+    {
+      "category": "Visualization",
+      "items": ["Power BI (DAX)", "Tableau", "Streamlit", "Plotly/Dash", "Excel (VBA/Macros)"]
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "role": "Data Analyst",
+      "company": "Art in Art",
+      "period": "Jun 2025 – Present",
+      "description": "Leading data initiatives to optimize manufacturing workflows and reporting.",
+      "achievements": [
+        "Architected an automated ETL pipeline using Python & SQL, cutting manual reporting time by 70% (15hrs/week saved).",
+        "Developed interactive Power BI dashboards monitoring production KPIs, leading to a 12% reduction in inventory waste.",
+        "Implemented a sales forecasting model achieving 95% accuracy, directly aiding supply chain planning.",
+        "Conducted root-cause analysis on production defects, identifying key variables that reduced defect rates by 8%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Enterprise RAG Document Assistant",
+      "description": "A production-ready Retrieval-Augmented Generation (RAG) system capable of ingesting thousands of PDF technical manuals. Uses LangChain for orchestration and Pinecone for vector storage to provide accurate, citation-backed answers to engineering queries.",
+      "tags": ["Python", "LangChain", "OpenAI", "Pinecone", "React"],
+      "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
+      "github": "#",
+      "link": "#"
+    },
+    {
+      "id": "p2",
+      "title": "Predictive Maintenance Dashboard",
+      "description": "An end-to-end IoT analytics platform. Ingests real-time sensor data from manufacturing equipment using Kafka, processes it with Spark, and uses an LSTM neural network to predict machinery failure 48 hours in advance.",
+      "tags": ["IoT", "LSTM", "Streamlit", "Docker", "AWS"],
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000",
+      "github": "#"
+    },
+    {
+      "id": "p3",
+      "title": "Customer Churn Prediction Pipeline",
+      "description": "A full ML pipeline automated with Airflow. Features automated data cleaning, feature engineering, and model retraining. Identifies high-risk customers and pushes segments directly to the CRM for retention campaigns.",
+      "tags": ["Scikit-learn", "Airflow", "MLflow", "PostgreSQL"],
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+      "github": "#"
+    },
+    {
+      "id": "p4",
+      "title": "Automated Financial Fraud Detection",
+      "description": "Real-time anomaly detection system for financial transactions. Implements Isolation Forest and Autoencoders to flag suspicious activities with low latency. Includes a reporting layer for the risk management team.",
+      "tags": ["Anomaly Detection", "Python", "API Development", "FastAPI"],
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000",
+      "github": "#"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "degree": "B.Sc. in Information Technology",
+      "institution": "Somaiya Vidyavihar University, Mumbai",
+      "period": "Graduating 2025",
+      "description": "Focus on Data Structures, Algorithms, and Database Management Systems."
+    }
+  ],
+  "certifications": [
+    {
+      "id": "c1",
+      "name": "Python for Data Science, AI & Development",
+      "issuer": "IBM, Coursera"
+    },
+    {
+      "id": "c2",
+      "name": "Databases and SQL for Data Science",
+      "issuer": "IBM, Coursera"
+    },
+    {
+      "id": "c3",
+      "name": "Advanced Data Engineering",
+      "issuer": "IBM, Coursera"
+    },
+    {
+      "id": "c4",
+      "name": "Machine Learning Specialization",
+      "issuer": "DeepLearning.AI"
+    }
+  ]
+}
