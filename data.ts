@@ -87,7 +87,8 @@ const data = {
       "description": "End-to-end analytics platform. Ingests real-time sensor data via Kafka, processes with Spark, and uses LSTM networks to predict machinery failure 48 hours in advance.",
       "tags": ["IoT", "LSTM", "Streamlit", "AWS"],
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000",
-      "github": "#"
+      "github": "#" , 
+      "link": "#"
     },
     {
       "id": "p4",
