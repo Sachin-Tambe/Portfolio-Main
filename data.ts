@@ -1,6 +1,5 @@
-import { Project, Experience, Skill, Education, Certification, PersonalInfo } from './types';
+import { Project, Experience, Skill, Education, Certification, PersonalInfo, CaseStudy } from './types';
 
-// Inlined data to prevent JSON module resolution issues in browser environments
 const data = {
   "personalInfo": {
     "name": "Sachin Tambe",
@@ -11,11 +10,11 @@ const data = {
     "phone": "+91-9076398319",
     "resumeUrl": "/resume.pdf",
     "socials": {
-      "github": "https://github.com/Sachin-Tambe",
-      "linkedin": "https://www.linkedin.com/in/-sachintambe/?originalSubdomain=in",
-      "kaggle": "https://www.kaggle.com/sachintabajitambe",
-      "twitter": "#",
-      "medium": "#"
+      "github": "https://github.com/",
+      "linkedin": "https://linkedin.com/in/",
+      "kaggle": "https://kaggle.com/",
+      "twitter": "https://twitter.com/",
+      "medium": "https://medium.com/"
     }
   },
   "skills": [
@@ -66,25 +65,27 @@ const data = {
     {
       "id": "p1",
       "title": "Autonomous Legal Research Agent",
-      "description": "A multi-agent system capable of analyzing legal contracts. One agent retrieves clauses, another checks for compliance against a vector database of laws, and a third drafts a summary report. Built with LangGraph.",
+      "description": "A multi-agent system capable of analyzing legal contracts. One agent retrieves clauses, another checks for compliance, and a third drafts summary reports.",
       "tags": ["Agentic AI", "LangGraph", "Vector DB", "Python"],
       "image": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
-      "link": "#"
+      "link": "#",
+      "caseStudyId": "cs1"
     },
     {
       "id": "p2",
       "title": "Enterprise RAG Document Assistant",
-      "description": "A production-ready RAG system ingesting thousands of PDF technical manuals. Uses hybrid search (Keyword + Semantic) and citation-backed answers to ensure reliability.",
+      "description": "A production-ready RAG system ingesting technical manuals with hybrid search and citation-backed answers.",
       "tags": ["LangChain", "OpenAI", "Pinecone", "React"],
       "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
-      "link": "#"
+      "link": "#",
+      "caseStudyId": "cs2"
     },
     {
       "id": "p3",
       "title": "Predictive Maintenance IoT Dashboard",
-      "description": "End-to-end analytics platform. Ingests real-time sensor data via Kafka, processes with Spark, and uses LSTM networks to predict machinery failure 48 hours in advance.",
+      "description": "End-to-end analytics platform using LSTM networks to predict machinery failure 48 hours in advance.",
       "tags": ["IoT", "LSTM", "Streamlit", "AWS"],
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
@@ -93,11 +94,39 @@ const data = {
     {
       "id": "p4",
       "title": "Customer Churn Prediction Pipeline",
-      "description": "Automated ML pipeline with Airflow. Features automated data cleaning, feature engineering, and model retraining. Pushes high-risk segments to CRM.",
+      "description": "Automated ML pipeline with Airflow, features automated cleaning and model retraining.",
       "tags": ["Scikit-learn", "Airflow", "MLflow", "SQL"],
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
       "link": "#"
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": "cs1",
+      "title": "The Future of Legal Audits",
+      "subtitle": "How Agentic AI reduced manual review time by 92%",
+      "challenge": "Legal teams at a mid-sized firm were spending hundreds of hours manually checking thousands of contracts for GDPR compliance. Human error was high, and the process was not scalable.",
+      "solution": "Built a 3-agent autonomous team using LangGraph. The 'Retriever' agent parsed PDFs into vector chunks. The 'Auditor' agent checked chunks against a predefined legal checklist. The 'Summarizer' compiled findings into a final PDF report.",
+      "results": [
+        "Manual effort reduced from 40 hours per batch to 3.2 hours.",
+        "Zero missed high-risk clauses in initial benchmark tests.",
+        "System handles up to 500 pages of text simultaneously."
+      ],
+      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000"
+    },
+    {
+      "id": "cs2",
+      "title": "Zero-Hallucination RAG",
+      "subtitle": "Building trust in enterprise AI documentation",
+      "challenge": "A manufacturing client needed an AI that could answer technical queries from 10,000+ internal documents without ever making up facts, as incorrect instructions could lead to machine damage.",
+      "solution": "Implemented a 'Self-Correcting RAG' architecture. If the retrieved context is insufficient, the model refuses to answer or triggers a broader search. Added metadata filtering to ensure only relevant manual versions are used.",
+      "results": [
+        "98% accuracy in technical parameter retrieval.",
+        "Full citation mapping for every claim made by the assistant.",
+        "Reduction in technical support tickets by 35% within 3 months."
+      ],
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000"
     }
   ],
   "education": [
@@ -137,6 +166,7 @@ export const PERSONAL_INFO: PersonalInfo = data.personalInfo;
 export const SKILLS: Skill[] = data.skills;
 export const EXPERIENCE: Experience[] = data.experience;
 export const PROJECTS: Project[] = data.projects;
+export const CASE_STUDIES: CaseStudy[] = data.caseStudies;
 export const EDUCATION: Education[] = data.education;
 export const CERTIFICATIONS: Certification[] = data.certifications;
 

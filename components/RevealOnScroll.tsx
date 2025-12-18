@@ -4,14 +4,16 @@ interface Props {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  direction?: 'up' | 'left' | 'right';
+  direction?: 'up' | 'left' | 'right' | 'none';
+  scale?: boolean;
 }
 
 export const RevealOnScroll: React.FC<Props> = ({ 
   children, 
   className = "", 
   delay = 0,
-  direction = 'up'
+  direction = 'up',
+  scale = false
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -36,20 +38,22 @@ export const RevealOnScroll: React.FC<Props> = ({
 
   const getTransform = () => {
     if (!isVisible) {
+      const scaleStr = scale ? 'scale-95' : '';
       switch (direction) {
-        case 'up': return 'translate-y-10';
-        case 'left': return '-translate-x-10';
-        case 'right': return 'translate-x-10';
-        default: return 'translate-y-10';
+        case 'up': return `translate-y-12 ${scaleStr}`;
+        case 'left': return `-translate-x-12 ${scaleStr}`;
+        case 'right': return `translate-x-12 ${scaleStr}`;
+        case 'none': return `${scaleStr}`;
+        default: return `translate-y-12 ${scaleStr}`;
       }
     }
-    return 'translate-y-0 translate-x-0';
+    return 'translate-y-0 translate-x-0 scale-100';
   };
 
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ease-out transform ${
+      className={`transition-all duration-1000 cubic-bezier(0.23, 1, 0.32, 1) transform ${
         isVisible ? 'opacity-100' : 'opacity-0'
       } ${getTransform()} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}

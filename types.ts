@@ -6,6 +6,17 @@ export interface Project {
   link?: string;
   github?: string;
   image: string;
+  caseStudyId?: string;
+}
+
+export interface CaseStudy {
+  id: string;
+  title: string;
+  subtitle: string;
+  challenge: string;
+  solution: string;
+  results: string[];
+  image: string;
 }
 
 export interface Experience {
