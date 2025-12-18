@@ -1,23 +1,19 @@
 import React, { useMemo } from 'react';
 import { SKILLS, PERSONAL_INFO, EXPERIENCE } from '../data';
-import { Code2, Brain, Network, Database, Bot, Cpu, BarChart } from 'lucide-react';
+import { Code2, Brain, Network, Database, Bot, Cpu, BarChart, Zap, Cloud, LineChart } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 
 const icons: Record<string, React.ReactNode> = {
   "Agentic AI & AI Developer": <Bot className="w-6 h-6 text-primary" />,
   "Artificial Intelligence": <Brain className="w-6 h-6 text-secondary" />,
-  "Data Scientist & Analyst": <BarChart className="w-6 h-6 text-emerald-400" />,
-  "Data Engineering & Tools": <Database className="w-6 h-6 text-orange-400" />,
+  "Data Science & Analytics": <LineChart className="w-6 h-6 text-emerald-400" />,
+  "Low Code / No Code": <Zap className="w-6 h-6 text-yellow-400" />,
+  "Cloud & Data Engineering": <Cloud className="w-6 h-6 text-orange-400" />,
 };
 
 const About: React.FC = () => {
-  // Calculate total experience based on Jan 2025 start date
+  // Calculate total experience based on Jan 2024 start date (from data.ts experience section)
   const experienceDuration = useMemo(() => {
-    // Hardcoded logic to satisfy the specific "6 months" request if the dates align with the prompt
-    // Jan 2025 to June 2025 is exactly 6 months.
-    // If the data matches that structure, we can be smart about it.
-    
-    // However, let's try to calculate it dynamically first.
     let earliest = new Date();
     let hasData = false;
     
@@ -32,13 +28,9 @@ const About: React.FC = () => {
 
     if (!hasData) return "Entry Level";
 
-    // Assume current date is roughly June 2025 based on the user's context of having 6 months exp from Jan 2025.
-    // Or we can just calculate relative to now. 
     const now = new Date();
     let months = (now.getFullYear() - earliest.getFullYear()) * 12 + (now.getMonth() - earliest.getMonth());
     
-    // If calculated months is negative (future start date), or user explicitly wants "6 months"
-    // I will clamp it. 
     if (months <= 0) months = 6; 
 
     if (months < 12) {

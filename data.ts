@@ -20,19 +20,23 @@ const data = {
   "skills": [
     {
       "category": "Agentic AI & AI Developer",
-      "items": ["LangChain", "LangGraph", "CrewAI", "AutoGen", "Phidata", "Agent Orchestration", "Tool Use/Function Calling"]
+      "items": ["LangChain", "LangGraph", "CrewAI", "Voice AI", "Agent Orchestration", "Tool Use/Function Calling", "AutoGPT"]
     },
     {
       "category": "Artificial Intelligence",
-      "items": ["OpenAI API", "Hugging Face", "Fine-tuning (LoRA/QLoRA)", "RAG Architecture", "Vector Databases (Pinecone, Chroma)", "Ollama"]
+      "items": ["OpenAI API", "Google AI Studio", "Hugging Face", "Fine-tuning (LoRA/QLoRA)", "RAG Architecture", "Vector Databases (Pinecone, Chroma)", "Ollama"]
     },
     {
-      "category": "Data Scientist & Analyst",
-      "items": ["Python (Pandas, NumPy)", "Scikit-learn", "Statistical Modeling", "A/B Testing", "EDA", "Data Visualization"]
+      "category": "Low Code / No Code",
+      "items": ["n8n", "Zapier", "Make.com", "Voiceflow", "Stack AI", "Retool", "Bubble", "Glide"]
     },
     {
-      "category": "Data Engineering & Tools",
-      "items": ["SQL (PostgreSQL)", "AWS Services", "Docker", "Apache Airflow", "Power BI", "Git/GitHub"]
+      "category": "Cloud & Data Engineering",
+      "items": ["GCP (Vertex AI, BigQuery)", "AWS Services", "SQL (PostgreSQL)", "Docker", "Apache Airflow", "VS Code", "Git/GitHub"]
+    },
+    {
+      "category": "Data Science & Analytics",
+      "items": ["Python (Pandas, NumPy)", "Scikit-learn", "Statistical Modeling", "A/B Testing", "EDA", "Data Visualization (Power BI)"]
     }
   ],
   "experience": [
