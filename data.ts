@@ -113,7 +113,9 @@ const data = {
         "Zero missed high-risk clauses in initial benchmark tests.",
         "System handles up to 500 pages of text simultaneously."
       ],
-      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000"
+      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000",
+      "github": "#",
+      "link": "#"
     },
     {
       "id": "cs2",
@@ -126,7 +128,9 @@ const data = {
         "Full citation mapping for every claim made by the assistant.",
         "Reduction in technical support tickets by 35% within 3 months."
       ],
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000"
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000",
+      "github": "#",
+      "link": "#"
     }
   ],
   "education": [

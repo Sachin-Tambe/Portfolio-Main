@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CASE_STUDIES } from '../data';
 import { RevealOnScroll } from './RevealOnScroll';
-import { CheckCircle2, ArrowRight, Lightbulb, Target, Rocket } from 'lucide-react';
+import { CheckCircle2, Github, ExternalLink, Lightbulb, Target, Rocket } from 'lucide-react';
 
 const CaseStudies: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -57,10 +57,32 @@ const CaseStudies: React.FC = () => {
                     className="w-full h-full object-cover opacity-60 transition-transform duration-700 hover:scale-105"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
-                   <div className="absolute bottom-6 left-8">
+                   <div className="absolute bottom-6 left-8 flex items-center gap-3">
                       <span className="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest border border-primary/30">
                         Deep Dive
                       </span>
+                      <div className="flex gap-4 ml-4">
+                        {CASE_STUDIES[activeTab].github && (
+                          <a 
+                            href={CASE_STUDIES[activeTab].github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center text-sm font-medium text-gray-200 hover:text-white transition-colors hover:underline decoration-primary underline-offset-4"
+                          >
+                            <Github className="w-4 h-4 mr-2" /> Code
+                          </a>
+                        )}
+                        {CASE_STUDIES[activeTab].link && (
+                          <a 
+                            href={CASE_STUDIES[activeTab].link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center text-sm font-medium text-gray-200 hover:text-white transition-colors hover:underline decoration-primary underline-offset-4"
+                          >
+                            <ExternalLink className="w-4 h-4 mr-2" /> Live Demo
+                          </a>
+                        )}
+                      </div>
                    </div>
                 </div>
 

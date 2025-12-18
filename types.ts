@@ -17,6 +17,8 @@ export interface CaseStudy {
   solution: string;
   results: string[];
   image: string;
+  github?: string;
+  link?: string;
 }
 
 export interface Experience {
