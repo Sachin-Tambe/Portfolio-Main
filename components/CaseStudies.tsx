@@ -3,6 +3,16 @@ import { CASE_STUDIES } from '../data';
 import { RevealOnScroll } from './RevealOnScroll';
 import { CheckCircle2, Github, ExternalLink, Lightbulb, Target, Rocket } from 'lucide-react';
 
+const formatWithBold = (text: string) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={i} className="text-emerald-400 font-bold">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+};
+
 const CaseStudies: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -23,7 +33,6 @@ const CaseStudies: React.FC = () => {
         </RevealOnScroll>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Navigation Tabs */}
           <div className="lg:col-span-4 space-y-4">
             {CASE_STUDIES.map((cs, index) => (
               <RevealOnScroll key={cs.id} delay={index * 100} direction="right">
@@ -46,7 +55,6 @@ const CaseStudies: React.FC = () => {
             ))}
           </div>
 
-          {/* Content Area */}
           <div className="lg:col-span-8">
             <RevealOnScroll key={CASE_STUDIES[activeTab].id} direction="left">
               <div className="bg-surface/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
@@ -117,7 +125,7 @@ const CaseStudies: React.FC = () => {
                       {CASE_STUDIES[activeTab].results.map((result, idx) => (
                         <div key={idx} className="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/5 hover:border-emerald-400/30 transition-colors">
                           <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                          <span className="text-gray-200">{result}</span>
+                          <span className="text-gray-200">{formatWithBold(result)}</span>
                         </div>
                       ))}
                     </div>

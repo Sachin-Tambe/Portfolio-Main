@@ -3,9 +3,9 @@ import { Project, Experience, Skill, Education, Certification, PersonalInfo, Cas
 const data = {
   "personalInfo": {
     "name": "Sachin Tambe",
-    "title": "Agentic AI Engineer & Data Scientist",
+    "title": "Associate Agentic AI Engineer & Data Science Intern",
     "tagline": "From Data Insights to Autonomous Intelligence.",
-    "bio": "I am an Agentic AI Engineer building on a strong foundation in Data Science and Analytics. My journey started with interpreting data to drive business decisions, which naturally evolved into engineering autonomous AI systems that take action on that data. I am actively learning and implementing multi-agent workflows, fine-tuning LLMs, and developing intelligent applications that bridge the gap between traditional data analysis and agentic automation.",
+    "bio": "I am an Associate Agentic AI Engineer building on a strong foundation in Data Science and Analytics. My journey started with interpreting data to drive business decisions, which naturally evolved into engineering autonomous AI systems that take action on that data. I am actively implementing multi-agent workflows, fine-tuning LLMs, and developing intelligent applications that bridge the gap between traditional data analysis and agentic automation.",
     "email": "tambesachin347@gmail.com",
     "phone": "+91-9076398319",
     "resumeUrl": "/resume.pdf",
@@ -27,41 +27,41 @@ const data = {
       "items": ["OpenAI API", "Google AI Studio", "Hugging Face", "Fine-tuning (LoRA/QLoRA)", "RAG Architecture", "Vector Databases (Pinecone, Chroma)", "Ollama"]
     },
     {
-      "category": "Low Code / No Code",
-      "items": ["n8n", "Zapier", "Make.com", "Voiceflow", "Stack AI", "Retool", "Bubble", "Glide"]
-    },
-    {
       "category": "Cloud & Data Engineering",
       "items": ["GCP (Vertex AI, BigQuery)", "AWS Services", "SQL (PostgreSQL)", "Docker", "Apache Airflow", "VS Code", "Git/GitHub"]
     },
     {
       "category": "Data Science & Analytics",
       "items": ["Python (Pandas, NumPy)", "Scikit-learn", "Statistical Modeling", "A/B Testing", "EDA", "Data Visualization (Power BI)"]
+    },
+    {
+      "category": "Low Code / No Code",
+      "items": ["n8n", "Zapier", "Make.com", "Voiceflow", "Stack AI", "Retool", "Bubble", "Glide"]
     }
   ],
   "experience": [
     {
       "id": "exp_current",
       "role": "Agentic AI Engineer",
-      "company": "Tech Innovations",
+      "company": "Tech Innovations (Autonomous AI SaaS Startup)",
       "period": "Jun 2025 – Present",
       "description": "Designing and deploying autonomous agentic workflows to automate complex business processes.",
       "achievements": [
-        "Architected a multi-agent system using CrewAI to automate market research, reducing manual data gathering time by 85%.",
-        "Developed a production-grade RAG pipeline using LangGraph that processes technical documentation to answer engineering queries with 98% retrieval accuracy.",
-        "Integrated function-calling capabilities allowing AI agents to directly interact with SQL databases and generate real-time reports."
+        "Architected a multi-agent system using CrewAI to automate market research, reducing manual data gathering time by **85%**.",
+        "Developed a production-grade RAG pipeline using LangGraph that processes technical documentation with **98% retrieval accuracy**.",
+        "Integrated function-calling capabilities allowing AI agents to directly interact with SQL databases for **real-time reporting**."
       ]
     },
     {
       "id": "exp_prev",
-      "role": "Data Scientist & Analyst",
-      "company": "Art in Art",
+      "role": "Data Analyst & Science Intern",
+      "company": "Art in Art (E-commerce Analytics Agency)",
       "period": "Jan 2024 – Jun 2025",
-      "description": "Focused on predictive modeling and automated reporting systems.",
+      "description": "Focused on predictive modeling and automated reporting systems for manufacturing clients.",
       "achievements": [
-        "Built an automated ETL pipeline using Python & SQL, cutting manual reporting time by 70% (15hrs/week saved).",
-        "Developed interactive Power BI dashboards monitoring production KPIs, leading to a 12% reduction in inventory waste.",
-        "Implemented a sales forecasting model (XGBoost) achieving 95% accuracy, directly aiding supply chain planning."
+        "Built an automated ETL pipeline using Python & SQL, cutting manual reporting time by **70%** (**15hrs/week saved**).",
+        "Developed interactive Power BI dashboards monitoring production KPIs, leading to a **12% reduction** in inventory waste.",
+        "Implemented a sales forecasting model (XGBoost) achieving **95% accuracy**, directly aiding supply chain planning."
       ]
     }
   ],
@@ -113,9 +113,9 @@ const data = {
       "challenge": "Legal teams at a mid-sized firm were spending hundreds of hours manually checking thousands of contracts for GDPR compliance. Human error was high, and the process was not scalable.",
       "solution": "Built a 3-agent autonomous team using LangGraph. The 'Retriever' agent parsed PDFs into vector chunks. The 'Auditor' agent checked chunks against a predefined legal checklist. The 'Summarizer' compiled findings into a final PDF report.",
       "results": [
-        "Manual effort reduced from 40 hours per batch to 3.2 hours.",
-        "Zero missed high-risk clauses in initial benchmark tests.",
-        "System handles up to 500 pages of text simultaneously."
+        "Manual effort reduced from 40 hours per batch to **3.2 hours**.",
+        "**Zero missed** high-risk clauses in initial benchmark tests.",
+        "System handles up to **500 pages** of text simultaneously."
       ],
       "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
@@ -128,9 +128,9 @@ const data = {
       "challenge": "A manufacturing client needed an AI that could answer technical queries from 10,000+ internal documents without ever making up facts, as incorrect instructions could lead to machine damage.",
       "solution": "Implemented a 'Self-Correcting RAG' architecture. If the retrieved context is insufficient, the model refuses to answer or triggers a broader search. Added metadata filtering to ensure only relevant manual versions are used.",
       "results": [
-        "98% accuracy in technical parameter retrieval.",
-        "Full citation mapping for every claim made by the assistant.",
-        "Reduction in technical support tickets by 35% within 3 months."
+        "**98% accuracy** in technical parameter retrieval.",
+        "Full **citation mapping** for every claim made by the assistant.",
+        "Reduction in technical support tickets by **35%** within 3 months."
       ],
       "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
