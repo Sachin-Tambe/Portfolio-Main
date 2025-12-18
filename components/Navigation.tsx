@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Cpu, Download } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { PERSONAL_INFO } from '../data';
+
+const Logo = () => (
+  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary p-[2px] shadow-lg shadow-primary/20">
+    <div className="flex items-center justify-center w-full h-full bg-dark rounded-[6px] group">
+      <span className="text-white font-display font-bold text-lg tracking-tighter group-hover:scale-110 transition-transform">ST</span>
+    </div>
+  </div>
+);
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +34,9 @@ const Navigation: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <Cpu className="h-8 w-8 text-primary animate-pulse-slow" />
-            <span className="ml-2 text-xl font-display font-bold tracking-wider text-white">SACHIN.TAMBE</span>
+          <div className="flex-shrink-0 flex items-center group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+            <Logo />
+            <span className="ml-3 text-xl font-display font-bold tracking-wider text-white hidden sm:block">SACHIN.TAMBE</span>
           </div>
           
           <div className="hidden md:block">
