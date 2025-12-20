@@ -8,7 +8,7 @@ const data = {
     "bio": "I am an Associate Agentic AI Engineer building on a strong foundation in Data Science and Analytics. My journey started with interpreting data to drive business decisions, which naturally evolved into engineering autonomous AI systems that take action on that data. I am actively implementing multi-agent workflows, fine-tuning LLMs, and developing intelligent applications that bridge the gap between traditional data analysis and agentic automation.",
     "email": "tambesachin347@gmail.com",
     "phone": "+91-9076398319",
-    "resumeUrl": "/resume.pdf",
+    "resumeUrl": "https://drive.google.com/file/d/1Zsh439Ug81BvNpp_ZR_nbg4Biq7D4_nB/view?usp=sharing",
     "socials": {
       "github": "https://github.com/",
       "linkedin": "https://linkedin.com/in/",
