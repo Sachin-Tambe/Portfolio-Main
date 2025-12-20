@@ -42,26 +42,37 @@ const data = {
   "experience": [
     {
       "id": "exp_current",
-      "role": "Agentic AI Engineer",
-      "company": "Tech Innovations (Autonomous AI SaaS Startup)",
+      "role": "Data Analyst Executive",
+      "company": "Art in Art - (A Gandhi Group Company) |",
       "period": "Jun 2025 – Present",
-      "description": "Designing and deploying autonomous agentic workflows to automate complex business processes.",
-      "achievements": [
-        "Architected a multi-agent system using CrewAI to automate market research, reducing manual data gathering time by **85%**.",
-        "Developed a production-grade RAG pipeline using LangGraph that processes technical documentation with **98% retrieval accuracy**.",
-        "Integrated function-calling capabilities allowing AI agents to directly interact with SQL databases for **real-time reporting**."
-      ]
-    },
-    {
-      "id": "exp_prev",
-      "role": "Data Analyst & Science Intern",
-      "company": "Art in Art (E-commerce Analytics Agency)",
-      "period": "Jan 2024 – Jun 2025",
       "description": "Focused on predictive modeling and automated reporting systems for manufacturing clients.",
       "achievements": [
         "Built an automated ETL pipeline using Python & SQL, cutting manual reporting time by **70%** (**15hrs/week saved**).",
         "Developed interactive Power BI dashboards monitoring production KPIs, leading to a **12% reduction** in inventory waste.",
         "Implemented a sales forecasting model (XGBoost) achieving **95% accuracy**, directly aiding supply chain planning."
+      ]
+    }
+   ,
+    {
+      "id": "exp_prev",
+      "role": "Applied AI Intern – Agnirva AI - Internship",
+      "company": "Agnirva.com Space Community",
+      "period": "Feb 2025 – Mar 2025",
+      "description": "Explored AI tools like ChatGPT & Gemini for real-world use cases, built ML pipelines",
+      "achievements": [
+       "Explored AI tools like ChatGPT & Gemini for real-world use cases, built ML pipelines" , 
+        "Create a Awesome Projects Using Vibe Coding " 
+      ]
+    }
+    ,
+      {
+      "id": "exp_prev",
+      "role": " AI: Transformative Learning with TechSaksham",
+      "company": "Edunet Foundation",
+      "period": "Feb 2025 – Mar 2025",
+      "description": "Developed and deployed AI models using Python and Azure through the TechSaksham initiative, culminating in a 4-week virtual internship focused on solving real-world industrial problems.",
+      "achievements": [
+"Successfully finished a 4-week industry-aligned virtual internship (in collaboration with AICTE), working on real-world problem prototypes and industrial use cases."
       ]
     }
   ],
@@ -80,7 +91,7 @@ const data = {
       "id": "p2",
       "title": "Enterprise RAG Document Assistant",
       "description": "A production-ready RAG system ingesting technical manuals with hybrid search and citation-backed answers.",
-      "tags": ["LangChain", "OpenAI", "Pinecone", "React"],
+      "tags": ["LangChain", "OpenAI", "Pinecone", "Python"],
       "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
       "github": "#",
       "link": "#",
